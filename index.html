@@ -45,4 +45,37 @@
 
   <script src="script.js"></script>
 </body>
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({		
+	webhookUrl: 'http://localhost:5678/webhook/411833de-fe45-4e46-8e00-9125b1cf7f28/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	loadPreviousSession: true,
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [],
+	i18n: {
+		es: {
+			title: 'hola! 👋',
+			subtitle: "Bienvenido a FDP centro de belleza",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'mensaje..',
+		},
+	},	
+});
+</script>
+
 </html>
