@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fffafc;
+  color: #333;
+}
+
+header {
+  background: #ff69b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.slogan {
+  font-style: italic;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #ff69b4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #ffe4ec;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
